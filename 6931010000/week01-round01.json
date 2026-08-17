@@ -1,0 +1,121 @@
+{
+  "student_id": "6931010000",
+  "week": 1,
+  "review_round": 1,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository เป็นของนักศึกษาตามข้อมูลที่กำหนด"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบโครงสร้างพื้นฐานของ Portfolio Starter"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code บน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "wait",
+      "detail": "ยังพบชื่อจาก Starter และยังไม่พบชื่อของนักศึกษาอย่างชัดเจน"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "wait",
+      "detail": "ยังไม่พบข้อความแนะนำตัวที่ปรับเป็นข้อมูลของนักศึกษา"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "มีการแก้ไขบางหน้า แต่ยังมีหลายหน้าที่เป็นข้อมูลจาก Starter"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "wait",
+      "detail": "ยังพบข้อมูล Demo จาก Starter หลายตำแหน่ง"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อมโยงหน้าภายในเว็บไซต์"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "พบ External Link ไปยังเว็บไซต์ภายนอก"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "partial",
+      "detail": "พบข้อมูล Email แต่การใช้งาน Email Link ยังไม่ครบถ้วน"
+    },
+    {
+      "criterion_id": "image",
+      "status": "pass",
+      "detail": "พบการใช้งานรูปภาพในเว็บไซต์"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "partial",
+      "detail": "รูปภาพบางรายการมี alt แต่ยังมีบางรายการที่ควรเพิ่มคำอธิบาย"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษา"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "partial",
+      "detail": "มี Commit Message แต่บางรายการยังอธิบายการเปลี่ยนแปลงไม่ชัดเจน"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "partial",
+      "detail": "เริ่มเห็นลำดับการพัฒนางาน แต่ Commit History ยังมีไม่มาก"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบงานล่าสุดบน branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "เปลี่ยนชื่อ ข้อความแนะนำตัว และข้อมูล Demo จาก Starter ให้เป็นข้อมูลของตนเอง"
+    },
+    {
+      "type": "improve",
+      "message": "เพิ่ม alt ให้รูปภาพและปรับ Commit Message ให้บอกสิ่งที่แก้ไขได้ชัดเจน"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

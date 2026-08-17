@@ -2,43 +2,63 @@
   "students": [
     {
       "student_id": "69319010020",
-      "github_repo": "https://github.com/nuttacha020/porfolio-std69319010020"
+      "github_owner": "nuttacha020"
     },
     {
       "student_id": "69319010021",
-      "github_repo": "https://github.com/natdanai-xp/Portfolio---STD69319010021"
+      "github_owner": "natdanai-xp"
     },
     {
       "student_id": "69319010022",
-      "github_repo": "https://github.com/s69319010022-cloud/porfolio-std69319010022"
+      "github_owner": "s69319010022-cloud"
     },
     {
       "student_id": "69319010023",
-      "github_repo": "https://github.com/s69319010023pao/portfolio-std69319010023"
+      "github_owner": "s69319010023pao"
     },
     {
       "student_id": "69319010024",
-      "github_repo": "https://github.com/s69319010024-arch/portfolio-std69319010024"
+      "github_owner": "s69319010024-arch"
+    },
+    {
+      "student_id": "69319010026",
+      "github_owner": "s69319010026-ux"
+    },
+    {
+      "student_id": "69319010027",
+      "github_owner": "Noppanut-bot"
     },
     {
       "student_id": "69319010029",
-      "github_repo": "https://github.com/s69319010029-droid/portfolio-std69319010029"
+      "github_owner": "s69319010029-droid"
     },
     {
       "student_id": "69319010030",
-      "github_repo": "https://github.com/s69319010030-boop/portfolio-std69319010030"
+      "github_owner": "s69319010030-boop"
     },
     {
       "student_id": "69319010031",
-      "github_repo": "https://github.com/s69319010031-a11y/portfolio-std69319010031"
+      "github_owner": "s69319010031-a11y"
+    },
+    {
+      "student_id": "69319010032",
+      "github_owner": "siriwimon16"
+    },
+    {
+      "student_id": "69319010034",
+      "github_owner": "SuriyaWest"
     },
     {
       "student_id": "69319010038",
-      "github_repo": "https://github.com/Atsada07/protfolio-std69319010038"
+      "github_owner": "Atsada07"
     },
     {
       "student_id": "69319010039",
-      "github_repo": "https://github.com/s69319010039-sudo/porfolio-std69319010039"
+      "github_owner": "s69319010039-sudo"
+    },
+    {
+      "student_id": "69319010041",
+      "github_owner": "Thanuphat07"
     }
   ]
 }

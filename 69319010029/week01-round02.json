@@ -1,0 +1,129 @@
+{
+  "student_id": "69319010029",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010029 อยู่ภายใต้บัญชี GitHub s69319010029-droid"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบโครงสร้าง Portfolio Starter และไฟล์หลักของโครงการ"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code และ Commit บน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "wait",
+      "detail": "ตรวจรอบที่ 2 แล้วยังพบชื่อ John Doe ใน index.html"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "wait",
+      "detail": "ยังพบข้อความ Web Developer | UI Designer | Student จาก Starter"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "มี Quick Links และข้อมูลติดต่อบางส่วน แต่ยังไม่เห็นการปรับ Portfolio เป็นข้อมูลส่วนตัวอย่างชัดเจน"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "wait",
+      "detail": "ยังพบ Portfolio Demo, John Doe และข้อความจาก Starter ในงานปัจจุบัน"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "partial",
+      "detail": "มี GitHub URL ไปยังบัญชีของนักศึกษา แต่เขียน href=\"https://github.com/s69319010029-droid\"_blank\" ซึ่ง syntax ยังไม่ถูกต้อง"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "Email Link ใช้ mailto:s69319010029@kktech.ac.th ถูกต้อง"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Image ในงานที่ตรวจ"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบ Image พร้อม alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้ง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "wait",
+      "detail": "Commit Message ปัจจุบันยังใช้ข้อความสั้น เช่น 4 ซ้ำหลายครั้ง จึงยังไม่อธิบายการเปลี่ยนแปลงของงาน"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "พบ Commit ต่อเนื่อง แต่จาก Source ปัจจุบันยังไม่เห็นการแก้ประเด็นสำคัญจาก AI Review รอบแรก"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "งานล่าสุดที่มีอยู่ถูก Push ขึ้น branch main แล้ว"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "AI Review รอบที่ 2 ยังพบ John Doe, Portfolio Demo และข้อความ Starter เดิม ควรเปลี่ยนเป็นข้อมูลของตนเอง"
+    },
+    {
+      "type": "fix",
+      "message": "แก้ GitHub Link เป็น href=\"https://github.com/s69319010029-droid\" target=\"_blank\""
+    },
+    {
+      "type": "fix",
+      "message": "ตรวจ CSS path ใน index.html ปัจจุบันใช้ ../css/style.css และ ../css/responsive.css ทั้งที่ index.html อยู่ระดับเดียวกับ css/"
+    },
+    {
+      "type": "improve",
+      "message": "Commit Message ยังเป็นเลขสั้น ๆ เช่น 4 ซ้ำหลายครั้ง ควรเขียนให้ระบุสิ่งที่แก้ไขในแต่ละ Commit"
+    },
+    {
+      "type": "next",
+      "message": "หลังแก้ Personal Portfolio แล้ว ให้ทำ Image + alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

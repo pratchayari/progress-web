@@ -1,85 +1,514 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Progress - 69319010021</title>
-<style>
-:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#e5e7eb;--blue:#2563eb;--green:#15803d;--greenbg:#ecfdf3;--amber:#b45309;--amberbg:#fffbeb;--gray:#64748b;--graybg:#f8fafc}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--text)}
-.wrap{max-width:1050px;margin:auto;padding:32px 18px 60px}.hero{background:linear-gradient(135deg,#172554,#1d4ed8);color:#fff;border-radius:22px;padding:28px 30px;box-shadow:0 14px 34px rgba(15,23,42,.14)}
-.eyebrow{font-size:.82rem;opacity:.8;text-transform:uppercase;letter-spacing:.08em}h1{margin:8px 0;font-size:2rem}.hero p{margin:0;opacity:.9}
-.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.sum{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}.num{font-size:1.7rem;font-weight:800}.small{font-size:.82rem;color:var(--muted)}
-.section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:16px}.section h2{font-size:1.08rem;margin:0 0 12px}.item{display:grid;grid-template-columns:38px 1fr;gap:10px;padding:12px 0;border-top:1px solid #eef2f7}.item:first-of-type{border-top:0}.mark{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800}
-.ok .mark{background:var(--greenbg);color:var(--green)}.partial .mark,.verify .mark{background:var(--amberbg);color:var(--amber)}.todo .mark{background:var(--graybg);color:var(--gray)}
-.label{font-weight:700}.detail{font-size:.88rem;color:var(--muted);margin-top:2px;line-height:1.5}.feedback li{margin:8px 0;line-height:1.55}
-.meta{margin-top:16px;font-size:.86rem;color:var(--muted)}code{background:#f1f5f9;padding:2px 5px;border-radius:5px}
-@media(max-width:700px){.summary{grid-template-columns:repeat(2,1fr)}h1{font-size:1.55rem}.hero{padding:23px}}
-</style>
-</head>
-<body>
-<main class="wrap">
-<section class="hero">
-<div class="eyebrow">Website Development Course · AI Review</div>
-<h1>Portfolio Progress — 69319010021</h1>
-<p>Repository: natdanai-xp/Portfolio---STD69319010021 · Week 1 · AI Review รอบที่ 1</p>
-</section>
 
-<div class="summary">
-<div class="sum"><div class="num" style="color:#15803d">7</div><div class="small">ผ่านชัดเจน</div></div>
-<div class="sum"><div class="num" style="color:#b45309">1</div><div class="small">ผ่านบางส่วน</div></div>
-<div class="sum"><div class="num" style="color:#b45309">2</div><div class="small">ต้องยืนยัน</div></div>
-<div class="sum"><div class="num" style="color:#64748b">12</div><div class="small">ยังไม่พบ / ยังไม่ทำ</div></div>
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+AI Review - 69319010021
+</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.header,
+.history,
+.summary,
+.review-section,
+.feedback {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin-top: 0;
+}
+
+.meta {
+    line-height: 1.8;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.summary-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.summary-number {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f7f7f7;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.badge-pass {
+    background: #dff5e3;
+}
+
+.badge-partial {
+    background: #fff0c7;
+}
+
+.badge-verify {
+    background: #dcecff;
+}
+
+.badge-wait {
+    background: #eeeeee;
+}
+
+.history-week {
+    margin-top: 18px;
+}
+
+.history-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.history-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #222;
+    background: #fafafa;
+}
+
+.history-link:hover {
+    background: #eeeeee;
+}
+
+.history-current {
+    font-weight: bold;
+    border-color: #777;
+}
+
+.feedback li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    
+
+    <section class="header">
+
+        <h1>Student Progress</h1>
+
+        <div class="meta">
+
+            <strong>Student ID:</strong>
+            69319010021
+            <br>
+
+            <strong>Week:</strong>
+            1
+            <br>
+
+            <strong>AI Review:</strong>
+            รอบที่ 2 · ผลล่าสุด
+            <br>
+
+            <strong>Workshop:</strong>
+            Portfolio Workshop - Week 1
+
+        </div>
+
+    </section>
+
+    <section class="history">
+
+        <h2>Review History</h2>
+
+        
+            <div class="history-week">
+                <strong>Week 1</strong>
+
+                <div class="history-links">
+                    
+                <a class="history-link"
+                   href="./reviews/week01-round01.html">
+                    รอบที่ 1
+                </a>
+                
+                <a class="history-link history-current"
+                   href="./reviews/week01-round02.html">
+                    รอบที่ 2 · ล่าสุด
+                </a>
+                
+                </div>
+            </div>
+            
+
+    </section>
+
+    <section class="summary">
+
+        <h2>Review Summary</h2>
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    8
+                </div>
+                ผ่าน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    5
+                </div>
+                ผ่านบางส่วน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    0
+                </div>
+                ต้องยืนยัน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    7
+                </div>
+                ยังไม่พบ
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Project Setup</h2>
+            <span>3 / 3 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>Repository เป็นของนักศึกษา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>Repository portfolio-std69319010021 อยู่ภายใต้บัญชี GitHub natdanai-xp</td>
+            </tr>
+            
+            <tr>
+                <td>Starter structure ครบ</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบโครงสร้าง Starter และไฟล์ HTML, css/, js/, assets/, images/, audio/ และ video/</td>
+            </tr>
+            
+            <tr>
+                <td>Push งานขึ้น GitHub แล้ว</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Source Code ปัจจุบันบน branch main</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Personal Portfolio</h2>
+            <span>1 / 4 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>เปลี่ยนชื่อเป็นของตนเอง</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>index.html เปลี่ยนชื่อใน Header เป็น Natdanai แล้ว</td>
+            </tr>
+            
+            <tr>
+                <td>เปลี่ยนข้อความแนะนำตัว</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>มีชื่อของนักศึกษาแล้ว แต่ข้อความแนะนำตัวยังเป็น Web Developer | UI Designer | Student จาก Starter</td>
+            </tr>
+            
+            <tr>
+                <td>ปรับข้อมูลแต่ละหน้า</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>about.html, skills.html, gallery.html และ contact.html ปัจจุบันยังเป็นไฟล์ว่าง</td>
+            </tr>
+            
+            <tr>
+                <td>ไม่มีข้อมูล Demo สำคัญหลงเหลือ</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>เปลี่ยนชื่อเป็น Natdanai แล้ว แต่ยังพบ Portfolio Demo และข้อความจาก Starter ใน index.html</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Links &amp; Multimedia</h2>
+            <span>1 / 9 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>Internal Link</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Internal Link ไปยัง Home, About, Skills, Gallery และ Contact</td>
+            </tr>
+            
+            <tr>
+                <td>External Link</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>มีความพยายามสร้าง External Link ไป GitHub แต่ href ปัจจุบันเขียนเป็น https://github.com&amp;quot; จึงควรแก้ URL</td>
+            </tr>
+            
+            <tr>
+                <td>Email Link</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>มีลิงก์ Send Email แต่ใช้ href=&quot;student@email.com&quot; ซึ่งยังไม่ใช่ mailto: และยังเป็นข้อมูลตัวอย่าง</td>
+            </tr>
+            
+            <tr>
+                <td>Image</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบการใช้งานรูปภาพในหน้า HTML</td>
+            </tr>
+            
+            <tr>
+                <td>alt</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบรูปภาพพร้อม alt</td>
+            </tr>
+            
+            <tr>
+                <td>Audio</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบการใช้งาน Audio</td>
+            </tr>
+            
+            <tr>
+                <td>Video</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบการใช้งาน Video</td>
+            </tr>
+            
+            <tr>
+                <td>YouTube Embed</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบ YouTube Embed</td>
+            </tr>
+            
+            <tr>
+                <td>Google Maps Embed</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบ Google Maps Embed</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Git</h2>
+            <span>3 / 4 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>มี Commit ของนักศึกษา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบการพัฒนาและ Push งานขึ้น Repository</td>
+            </tr>
+            
+            <tr>
+                <td>Commit Message มีความหมาย</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>ควรใช้ Commit Message ที่บอกการเปลี่ยนแปลงของงานให้ชัดเจนและเฉพาะเจาะจง</td>
+            </tr>
+            
+            <tr>
+                <td>Commit สอดคล้องกับการพัฒนา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>เห็นพัฒนาการจากรอบแรกที่ HTML ว่าง ไปสู่การมีเนื้อหาและ Navigation ใน index.html</td>
+            </tr>
+            
+            <tr>
+                <td>Latest work ถูก Push แล้ว</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>Repository มี Source Code ล่าสุดอยู่บน branch main</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+
+    <section class="feedback">
+
+        <h2>
+            สิ่งที่ควรตรวจสอบ / แก้ไขต่อ
+        </h2>
+
+        <ul>
+            <li>
+                <strong>FIX</strong>
+                แก้ External GitHub URL และ Email Link ให้ถูกต้อง โดย Email ควรใช้ mailto:
+            </li>
+            
+            <li>
+                <strong>IMPROVE</strong>
+                ทำ about.html, skills.html, gallery.html และ contact.html ซึ่งปัจจุบันยังว่าง พร้อมเปลี่ยน Portfolio Demo และข้อความ Starter ให้เป็นข้อมูลของตนเอง
+            </li>
+            
+            <li>
+                <strong>NEXT</strong>
+                เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1
+            </li>
+            </ul>
+
+    </section>
+
 </div>
 
-<section class="section"><h2>Project Setup</h2>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">Repository เป็นของนักศึกษา</div><div class="detail">Repository อยู่ภายใต้บัญชี natdanai-xp</div></div></div>
-<div class="item verify"><div class="mark">?</div><div><div class="label">origin ถูกต้อง</div><div class="detail">จาก Remote Repository อย่างเดียวยืนยันค่า origin ในเครื่องนักศึกษาไม่ได้</div></div></div>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">Starter structure ครบ</div><div class="detail">พบ index.html, about.html, skills.html, gallery.html, contact.html, css/, js/, assets/ และ docs/</div></div></div>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">Push งานขึ้น GitHub แล้ว</div><div class="detail">มี Commit บน branch main และงานถูก Push ขึ้น GitHub แล้ว</div></div></div>
-</section>
-
-<section class="section"><h2>Personal Portfolio</h2>
-<div class="item todo"><div class="mark">○</div><div><div class="label">เปลี่ยนชื่อเป็นของตนเอง</div><div class="detail">index.html ปัจจุบันเป็นไฟล์ว่าง จึงยังไม่พบข้อมูลชื่อของนักศึกษา</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">เปลี่ยนข้อความแนะนำตัว</div><div class="detail">index.html ปัจจุบันเป็นไฟล์ว่าง</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">ปรับข้อมูลแต่ละหน้า</div><div class="detail">ไฟล์ HTML หลัก เช่น about.html, skills.html, gallery.html และ contact.html ยังว่าง</div></div></div>
-<div class="item verify"><div class="mark">?</div><div><div class="label">ไม่มีข้อมูล Demo สำคัญหลงเหลือ</div><div class="detail">ไฟล์ HTML หลักยังว่าง จึงยังไม่มีเนื้อหาเพียงพอให้ตรวจข้อนี้</div></div></div>
-</section>
-
-<section class="section"><h2>Links &amp; Multimedia</h2>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Internal Link</div><div class="detail">index.html ยังว่าง จึงยังไม่พบ</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">External Link</div><div class="detail">index.html ยังว่าง จึงยังไม่พบ</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Email Link</div><div class="detail">index.html ยังว่าง จึงยังไม่พบ</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Image</div><div class="detail">ยังไม่พบหลักฐานการใช้งานรูปภาพในหน้า HTML</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">alt</div><div class="detail">ยังไม่พบหลักฐานการใช้ alt</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Audio</div><div class="detail">ยังไม่พบ Audio ในหน้า HTML</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Video</div><div class="detail">ยังไม่พบ Video ในหน้า HTML</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">YouTube Embed</div><div class="detail">ยังไม่พบ YouTube Embed</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">Google Maps Embed</div><div class="detail">ยังไม่พบ Google Maps Embed</div></div></div>
-</section>
-
-<section class="section"><h2>Git</h2>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">มี Commit ของนักศึกษา</div><div class="detail">พบ Commit ของนักศึกษาใน Repository</div></div></div>
-<div class="item partial"><div class="mark">~</div><div><div class="label">Commit Message มีความหมาย</div><div class="detail">มีข้อความเริ่มต้นที่ชัดเจน แต่ Commit ล่าสุดใช้ข้อความเพียง <code>1</code> ซึ่งไม่อธิบายสิ่งที่เปลี่ยน</div></div></div>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">Commit สอดคล้องกับการพัฒนา</div><div class="detail">Commit ล่าสุดเพิ่ม css/style.css และ css/responsive.css แสดงการพัฒนางาน CSS/Responsive</div></div></div>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">Latest work ถูก Push แล้ว</div><div class="detail">Repository มี Commit ล่าสุดบน branch main</div></div></div>
-</section>
-
-<section class="section"><h2>Final</h2>
-<div class="item ok"><div class="mark">✓</div><div><div class="label">ผ่าน AI Review</div><div class="detail">AI Review รอบนี้สำเร็จ โดยยึดงานที่พบจริงบน GitHub</div></div></div>
-<div class="item todo"><div class="mark">○</div><div><div class="label">ผ่าน Teacher Review</div><div class="detail">รอครูตรวจและยืนยัน</div></div></div>
-</section>
-
-<section class="section feedback"><h2>สิ่งที่ควรกลับไปทำ</h2>
-<ul>
-<li>ไฟล์ HTML หลักยังว่าง ควรเริ่มสร้างเนื้อหาใน <code>index.html</code> และปรับ Portfolio ให้เป็นข้อมูลของตนเอง</li>
-<li>ทำ Internal Link, External Link และ Email Link ให้มีหลักฐานในหน้าเว็บ</li>
-<li>ดำเนินงาน Image + <code>alt</code>, Audio, Video, YouTube Embed และ Google Maps Embed ตาม Progress Week 1</li>
-<li>มีการเริ่มทำ CSS และ Responsive แล้ว ควรเชื่อม CSS เข้ากับหน้า HTML และพัฒนาต่อ</li>
-<li>ปรับ Commit Message ให้บอกสิ่งที่เปลี่ยนชัดเจน แทนข้อความสั้น เช่น <code>1</code></li>
-</ul>
-<div class="meta">หมายเหตุ: “ยังไม่พบ” หมายถึงยังไม่มีหลักฐานบน GitHub ณ รอบ Review นี้ อาจเป็นงานที่ยังไม่ได้ทำหรือยังไม่ได้ Push</div>
-</section>
-</main>
 </body>
+
 </html>

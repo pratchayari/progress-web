@@ -1,0 +1,125 @@
+{
+  "student_id": "69319010022",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010022 อยู่ภายใต้บัญชี GitHub s69319010022-cloud"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบ index.html, about.html, skills.html, gallery.html, contact.html และโครงสร้าง css/, js/, assets/, images/, audio/ และ video/"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code ปัจจุบันและ Commit บน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "พบการเปลี่ยนชื่อในหน้าเว็บเป็น Nattapornchai"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "partial",
+      "detail": "เปลี่ยนชื่อแล้ว แต่ข้อความ Web Developer | UI Designer | Student ยังเป็นข้อความจาก Starter"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "ชื่อถูกเปลี่ยนในหลายหน้าแล้ว แต่เนื้อหาหลักของหน้า About และหน้าอื่นยังคงข้อความทั่วไปจาก Starter"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "partial",
+      "detail": "John Doe ถูกเปลี่ยนแล้ว แต่ยังพบ Portfolio Demo, Welcome to my portfolio website และข้อความจาก Starter"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "External Link ถูกแก้เป็น https://github.com/s69319010022-cloud และเปิดหน้าใหม่ด้วย target=\"_blank\""
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "พบ Email Link แบบ mailto:s69319010022@kktech.ac.th"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Image ในหน้า HTML ที่ตรวจ"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบ Image ที่ใช้ alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้งและมีการพัฒนางานต่อเนื่อง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "partial",
+      "detail": "Commit รุ่นใหม่มีความหมายชัดขึ้น เช่น แก้ External Link GitHub และแก้ไขชื่อเป็นของตัวเอง แต่ยังมี Commit เก่าที่เป็นข้อความสั้น"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "Commit History แสดงพัฒนาการจากรอบแรก ทั้งการแก้ External Link และเปลี่ยนชื่อเป็นข้อมูลของตนเอง"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบงานล่าสุดถูก Push ขึ้น branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "เปลี่ยนข้อความ Web Developer | UI Designer | Student, Portfolio Demo และข้อความ Welcome จาก Starter ให้เป็นข้อมูลของตนเอง"
+    },
+    {
+      "type": "improve",
+      "message": "ปรับเนื้อหาใน About, Skills, Gallery และ Contact ให้เป็น Portfolio ส่วนตัวมากขึ้น"
+    },
+    {
+      "type": "improve",
+      "message": "รักษารูปแบบ Commit Message รุ่นใหม่ที่อธิบายสิ่งที่แก้ไขได้ชัดเจน และหลีกเลี่ยงข้อความสั้นแบบเดิม"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "student_id": "69319010039",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010039 อยู่ภายใต้บัญชี GitHub s69319010039-sudo"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบโครงสร้าง Portfolio Starter และไฟล์หลักของโครงการ"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code และ Commit บน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "index.html เปลี่ยนชื่อเป็น Issaree และมีชื่อภาษาไทย อิสรีย์ บูรณพงษ์กูล"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "pass",
+      "detail": "index.html มีข้อความ Information Technology Student | Web Developer และคำแนะนำตัวของนักศึกษา"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "index.html และเนื้อหา About บางส่วนเป็นข้อมูลของนักศึกษาแล้ว แต่ about.html ยังมี Header John Doe และข้อมูลจาก Starter หลงเหลือ"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "wait",
+      "detail": "ยังพบ Portfolio Demo และ John Doe ใน about.html รวมถึง Footer ชื่อ Atsada Sanghan ซึ่งไม่ใช่ข้อมูลของนักศึกษาคนนี้"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "GitHub Link ใน index.html ใช้ target=\"_blank\" ถูกต้องแล้ว"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "Email Link ใช้ mailto:s69319010039@kktech.ac.th ถูกต้อง"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานเพียงพอว่ามีการใช้งาน Image ในหน้าเว็บ"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐาน Image พร้อม alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้ง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "pass",
+      "detail": "พบ Commit Message เช่น เพิ่มงานทุกหน้า, เพิ่มcss, แก้หน้าindex และ test server itlabkktech.com ซึ่งสื่อถึงงานที่ทำ"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "เห็นพัฒนาการจาก Starter ไปสู่ข้อมูลส่วนตัวใน index.html และมีการแก้ CSS/Links ต่อเนื่อง"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบ Commit ล่าสุดบน branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "ตรวจทุกหน้าอีกครั้ง โดยเฉพาะ about.html ซึ่งยังมี John Doe และ Portfolio Demo อยู่"
+    },
+    {
+      "type": "fix",
+      "message": "เปลี่ยน Footer ที่ยังเป็น Atsada Sanghan ให้เป็นชื่อของตนเอง เพราะเป็นข้อมูลของนักศึกษาคนอื่น"
+    },
+    {
+      "type": "improve",
+      "message": "index.html แก้ CSS path, External Link และ Email Link ถูกต้องแล้ว ควรรักษารูปแบบนี้ในหน้าอื่น"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

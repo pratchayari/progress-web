@@ -1,0 +1,125 @@
+{
+  "student_id": "69319010031",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010031 อยู่ภายใต้บัญชี GitHub s69319010031-a11y"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบโครงสร้าง Portfolio Starter และไฟล์หลักของโครงการ"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code และ Commit ปัจจุบันบน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "เปลี่ยนชื่อจาก John Doe เป็น Pornphithak Shitthi แล้ว"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "pass",
+      "detail": "เปลี่ยนข้อความแนะนำตัวเป็น Information Technology Student | Web Developer"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "pass",
+      "detail": "พบการปรับ About เป็นข้อมูลของนักศึกษา โดยระบุชื่อ รหัสนักศึกษา สาขาวิชา วิทยาลัย และความสนใจด้าน Web Development"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "partial",
+      "detail": "ข้อมูล John Doe ถูกเปลี่ยนแล้ว แต่ index.html ยังใช้ title และ Footer เป็น Portfolio Demo"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "GitHub Link ใช้ URL ของ Repository นักศึกษาและ target=\"_blank\" ถูกต้อง"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "แก้ Email Link เป็น mailto:s69319010031@kktech.ac.th ถูกต้องแล้ว"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Image ในงานที่ตรวจ"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบ Image พร้อม alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้งและมีการพัฒนางานต่อเนื่อง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "partial",
+      "detail": "Commit ล่าสุด fix: trigger webhook with json payload มีความหมายชัดเจนขึ้น แต่ยังพบ Commit ก่อนหน้า เช่น บันทึก และ บันทึก. ที่ไม่ระบุสิ่งที่แก้"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "เห็นพัฒนาการจาก Demo ในรอบแรกไปสู่ Personal Portfolio และแก้ Links ในรอบที่ 2"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบ Commit ล่าสุดบน branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "แก้ข้อความ Portfolio Demo ที่ยังเหลือใน <title> และ Footer ของ index.html ให้เป็นข้อมูล Portfolio ของตนเอง"
+    },
+    {
+      "type": "improve",
+      "message": "GitHub Link และ Email Link แก้ถูกต้องแล้ว ควรรักษารูปแบบนี้ในงานต่อไป"
+    },
+    {
+      "type": "improve",
+      "message": "Commit ล่าสุดเริ่มใช้ข้อความที่อธิบายงานได้ดีขึ้นแล้ว ควรหลีกเลี่ยง Commit Message กว้าง ๆ เช่น บันทึก"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

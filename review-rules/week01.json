@@ -1,0 +1,110 @@
+{
+  "week": 1,
+  "title": "Portfolio Workshop - Week 1",
+  "sections": [
+    {
+      "id": "project_setup",
+      "title": "Project Setup",
+      "criteria": [
+        {
+          "id": "repository_owner",
+          "label": "Repository เป็นของนักศึกษา"
+        },
+        {
+          "id": "starter_structure",
+          "label": "Starter structure ครบ"
+        },
+        {
+          "id": "pushed_to_github",
+          "label": "Push งานขึ้น GitHub แล้ว"
+        }
+      ]
+    },
+    {
+      "id": "personal_portfolio",
+      "title": "Personal Portfolio",
+      "criteria": [
+        {
+          "id": "personal_name",
+          "label": "เปลี่ยนชื่อเป็นของตนเอง"
+        },
+        {
+          "id": "personal_intro",
+          "label": "เปลี่ยนข้อความแนะนำตัว"
+        },
+        {
+          "id": "personal_pages",
+          "label": "ปรับข้อมูลแต่ละหน้า"
+        },
+        {
+          "id": "remove_demo_content",
+          "label": "ไม่มีข้อมูล Demo สำคัญหลงเหลือ"
+        }
+      ]
+    },
+    {
+      "id": "links_multimedia",
+      "title": "Links & Multimedia",
+      "criteria": [
+        {
+          "id": "internal_link",
+          "label": "Internal Link"
+        },
+        {
+          "id": "external_link",
+          "label": "External Link"
+        },
+        {
+          "id": "email_link",
+          "label": "Email Link"
+        },
+        {
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "id": "image_alt",
+          "label": "alt"
+        },
+        {
+          "id": "audio",
+          "label": "Audio"
+        },
+        {
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "id": "youtube_embed",
+          "label": "YouTube Embed"
+        },
+        {
+          "id": "google_maps_embed",
+          "label": "Google Maps Embed"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "title": "Git",
+      "criteria": [
+        {
+          "id": "student_commits",
+          "label": "มี Commit ของนักศึกษา"
+        },
+        {
+          "id": "meaningful_commit_message",
+          "label": "Commit Message มีความหมาย"
+        },
+        {
+          "id": "development_history",
+          "label": "Commit สอดคล้องกับการพัฒนา"
+        },
+        {
+          "id": "latest_work_pushed",
+          "label": "Latest work ถูก Push แล้ว"
+        }
+      ]
+    }
+  ]
+}

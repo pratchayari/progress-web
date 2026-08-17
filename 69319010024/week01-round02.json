@@ -1,0 +1,129 @@
+{
+  "student_id": "69319010024",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010024 อยู่ภายใต้บัญชี GitHub s69319010024-arch"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบโครงสร้าง Portfolio Starter และไฟล์หลักใน Repository"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code และ Commit ปัจจุบันบน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "index.html เปลี่ยนชื่อจาก Demo เป็น Thanaphat แล้ว"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "partial",
+      "detail": "มีชื่อของนักศึกษาแล้ว แต่ข้อความ Web Developer | UI Designer | Student ยังเป็นข้อความจาก Starter"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "index.html มีเนื้อหาและ Quick Links แล้ว แต่ยังควรปรับข้อมูลแต่ละหน้าให้เป็น Portfolio ส่วนตัวมากขึ้น"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "partial",
+      "detail": "ชื่อถูกเปลี่ยนแล้ว แต่ยังพบ Portfolio Demo และข้อความจาก Starter"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link ไป Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "partial",
+      "detail": "พบ GitHub URL ของนักศึกษา แต่เขียน <a href=\"https://github.com/s69319010024-arch\" _blank\"> ซึ่งยังไม่ได้ใช้ target=\"_blank\" อย่างถูกต้อง"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "partial",
+      "detail": "พบ Email Address แต่ href เป็น s69319010024@kktech.ac.th โดยยังไม่มี mailto:"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Image ในงานปัจจุบัน"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบ Image พร้อม alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้ง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "partial",
+      "detail": "มี Commit ที่อธิบายงาน เช่น test sever itlabkktech.com แต่ยังมี Commit Message กว้าง ๆ เช่น first หลายรายการ"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "เห็นพัฒนาการชัดเจนจากรอบแรกที่ HTML แทบว่าง ไปสู่ index.html ที่มีโครงสร้าง Portfolio และข้อมูลของนักศึกษา"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบงานล่าสุดถูก Push ขึ้น branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "แก้ Email Link ให้ใช้ href=\"mailto:s69319010024@kktech.ac.th\" และแก้ GitHub Link ให้ใช้ target=\"_blank\" อย่างถูกต้อง"
+    },
+    {
+      "type": "fix",
+      "message": "ตรวจ path CSS ใน index.html ซึ่งปัจจุบันใช้ ../css/style.css และ ../css/responsive.css ทั้งที่ index.html อยู่ระดับเดียวกับโฟลเดอร์ css/"
+    },
+    {
+      "type": "improve",
+      "message": "เปลี่ยน Portfolio Demo และข้อความ Web Developer | UI Designer | Student ให้เป็นข้อมูลหรือความสนใจของตนเอง"
+    },
+    {
+      "type": "improve",
+      "message": "ใช้ Commit Message ที่อธิบายสิ่งที่เปลี่ยนให้ชัดเจน แทนการใช้ข้อความ first ซ้ำ"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

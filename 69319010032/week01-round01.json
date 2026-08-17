@@ -1,0 +1,133 @@
+{
+  "student_id": "69319010032",
+  "week": 1,
+  "review_round": 1,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010032 อยู่ภายใต้บัญชี GitHub siriwimon16"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบ index.html, about.html, skills.html, gallery.html, contact.html และโครงสร้าง css/, js/, assets/, images/, audio/ และ video/"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code และ Commit หลายครั้งบน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "index.html เปลี่ยนชื่อจาก John Doe เป็น siriwimon แล้ว"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "partial",
+      "detail": "มีการเปลี่ยนชื่อแล้ว แต่ข้อความ Web Developer | UI Designer | Student ยังเป็นข้อความจาก Starter"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "พบการแก้ไขหลายหน้า แต่ยังควรตรวจเนื้อหาแต่ละหน้าให้เป็นข้อมูล Personal Portfolio ของนักศึกษาอย่างครบถ้วน"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "partial",
+      "detail": "เปลี่ยนชื่อใน index.html แล้ว แต่ยังพบ Portfolio Demo ใน title และ Footer รวมถึงข้อความ Intro จาก Starter"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "partial",
+      "detail": "พบ GitHub URL ของนักศึกษา แต่เขียน <a href=\"https://github.com/siriwimon16\"_blank> ซึ่งยังขาด target=\"_blank\""
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "partial",
+      "detail": "พบ Email Address ของนักศึกษา แต่ href ยังเป็น s69319010032@kktech.ac.th โดยไม่มี mailto:"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานเพียงพอว่ามีการใช้งาน Image จริงในหน้าเว็บ"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐาน Image พร้อม alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้งและมีการแก้ไขงานต่อเนื่อง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "wait",
+      "detail": "Commit Message ล่าสุด เช่น แกo;p', แก้;oll', แกio' และ แกo' ไม่สามารถสื่อได้ชัดเจนว่าแก้ไขส่วนใดของงาน"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "พบ Commit ต่อเนื่องหลายครั้ง แสดงว่ามีการพัฒนาและ Push งานหลายรอบ"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบงานล่าสุดถูก Push ขึ้น branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "เปลี่ยน Portfolio Demo และข้อความ Web Developer | UI Designer | Student ที่ยังเหลือให้เป็นข้อมูลของตนเอง"
+    },
+    {
+      "type": "fix",
+      "message": "แก้ GitHub Link เป็น <a href=\"https://github.com/siriwimon16\" target=\"_blank\">"
+    },
+    {
+      "type": "fix",
+      "message": "แก้ Email Link ให้ใช้ mailto:s69319010032@kktech.ac.th"
+    },
+    {
+      "type": "improve",
+      "message": "ตรวจ About, Skills, Gallery และ Contact ให้เป็นข้อมูล Personal Portfolio ของตนเองและไม่มี Demo content หลงเหลือ"
+    },
+    {
+      "type": "improve",
+      "message": "เขียน Commit Message ให้บอกสิ่งที่แก้ไขชัดเจน เช่น fix: correct github and email links หรือ feat: update about page"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Image พร้อม alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามกิจกรรม Week 1"
+    }
+  ]
+}

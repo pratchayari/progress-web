@@ -1,0 +1,125 @@
+{
+  "student_id": "69319010022",
+  "week": 1,
+  "review_round": 1,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository อยู่ภายใต้บัญชี GitHub s69319010022-cloud"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบหน้า HTML หลักและโครงสร้าง Portfolio Starter"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบหลาย Commit บน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "wait",
+      "detail": "รอบแรกยังพบชื่อ Demo John Doe"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "wait",
+      "detail": "รอบแรกยังพบข้อความ Demo Web Developer | UI Designer | Student"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "partial",
+      "detail": "มีการแก้ index.html บางส่วน เช่น GitHub และ Email แต่หน้าอื่นยังคงเนื้อหา Demo"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "wait",
+      "detail": "ยังพบ Portfolio Demo, John Doe และข้อความ Welcome จาก Starter"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบลิงก์ไป about.html, skills.html, gallery.html และ contact.html"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "partial",
+      "detail": "พบ URL GitHub แต่รูปแบบแท็ก a มี syntax ผิดในรอบแรก"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "พบ mailto:s69319010022@kktech.ac.th"
+    },
+    {
+      "criterion_id": "image",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้งาน Image"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "wait",
+      "detail": "ยังไม่พบหลักฐานการใช้ alt"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบ Audio"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบ Video"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบหลาย Commit หลังจาก Commit เริ่มต้น"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "wait",
+      "detail": "Commit ส่วนใหญ่เป็นข้อความสั้น เช่น k, s, css, cs, c และ csh"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "พบการ Commit ต่อเนื่อง แสดงลำดับการพัฒนางาน"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "Commit ล่าสุดอยู่บน branch main"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "เปลี่ยนชื่อ John Doe และข้อความ Demo ให้เป็นข้อมูลของตนเองทุกหน้า"
+    },
+    {
+      "type": "fix",
+      "message": "แก้ External Link GitHub ใน index.html ให้ syntax ของแท็ก a ถูกต้อง"
+    },
+    {
+      "type": "improve",
+      "message": "ปรับ Commit Message ให้บอกสิ่งที่เปลี่ยน แทนข้อความสั้น เช่น k, s, css หรือ csh"
+    },
+    {
+      "type": "next",
+      "message": "ทำ Image + alt, Audio, Video, YouTube Embed และ Google Maps Embed ตามงาน Week 1"
+    }
+  ]
+}

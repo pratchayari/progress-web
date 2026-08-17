@@ -1,0 +1,121 @@
+{
+  "student_id": "69319010020",
+  "week": 1,
+  "review_round": 2,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010020 อยู่ภายใต้บัญชี GitHub nuttacha020"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบไฟล์ HTML หลัก และโครงสร้าง css/, js/, assets/, images/, audio/ และ video/"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code ปัจจุบันบน branch main"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "พบการเปลี่ยนชื่อเป็น Ms.nuttacha และข้อมูลชื่อของนักศึกษาในเว็บไซต์"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "pass",
+      "detail": "พบข้อความแนะนำตัวของนักศึกษาและข้อมูลเกี่ยวกับการศึกษาในสาขาเทคโนโลยีสารสนเทศ"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "pass",
+      "detail": "พบการปรับข้อมูลส่วนตัวใน index.html, about.html, gallery.html และ contact.html"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "partial",
+      "detail": "ข้อมูลหลักถูกเปลี่ยนเป็นของนักศึกษาแล้ว แต่ยังมีข้อความทั่วไปจาก Starter เช่น Web Developer | UI Designer | Student อยู่หลายหน้า"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "พบ External Link ไปยัง GitHub ของ nuttacha020 และกำหนด target=\"_blank\""
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "พบ Email Link แบบ mailto:s69319010020@kktech.ac.th"
+    },
+    {
+      "criterion_id": "image",
+      "status": "pass",
+      "detail": "พบการใช้งานรูปภาพใน gallery.html"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "pass",
+      "detail": "รูปภาพใน gallery.html มี alt อธิบายรูปภาพ"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Audio ใน Source ปัจจุบัน"
+    },
+    {
+      "criterion_id": "video",
+      "status": "wait",
+      "detail": "ยังไม่พบการใช้งาน Video ใน Source ปัจจุบัน"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ YouTube Embed ใน Source ปัจจุบัน"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "wait",
+      "detail": "ยังไม่พบ Google Maps Embed ใน Source ปัจจุบัน"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit ของนักศึกษาหลายครั้งและมีการแก้ไขงานต่อเนื่อง"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "partial",
+      "detail": "มี Commit Message ที่อธิบายงาน เช่น แก้ไขข้อมูลส่วนตัว, แก้ไข css และแก้ไข email แต่ยังมี Commit Message ซ้ำหรือกว้างเกินไปบางรายการ"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "Commit History แสดงพัฒนาการจากการแก้ Starter ไปสู่การปรับข้อมูลส่วนตัวและองค์ประกอบของ Portfolio"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบ Source Code ล่าสุดบน branch main และ Repository มีการ Push งานล่าสุดแล้ว"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "fix",
+      "message": "ตรวจข้อความจาก Starter ที่ยังเหลือ เช่น Web Developer | UI Designer | Student และปรับให้สะท้อนข้อมูลหรือความสนใจของตนเอง"
+    },
+    {
+      "type": "improve",
+      "message": "เขียน Commit Message ให้เฉพาะเจาะจงกับการเปลี่ยนแปลงแต่ละครั้งมากขึ้น แทนการใช้ข้อความเดิมซ้ำหลาย Commit"
+    },
+    {
+      "type": "next",
+      "message": "เพิ่ม Audio, Video, YouTube Embed และ Google Maps Embed เพื่อให้ Links & Multimedia ของ Week 1 ครบ"
+    }
+  ]
+}

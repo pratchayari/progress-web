@@ -1,130 +1,514 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Progress - 69319010020</title>
-  <style>
-    :root{
-      --bg:#f4f7fb; --card:#ffffff; --text:#172033; --muted:#667085;
-      --line:#e5e7eb; --pass:#15803d; --pass-bg:#ecfdf3;
-      --wait:#64748b; --wait-bg:#f1f5f9; --verify:#a16207; --verify-bg:#fffbeb;
-      --partial:#b45309; --partial-bg:#fff7ed; --accent:#2563eb;
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+AI Review - 69319010020
+</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.header,
+.history,
+.summary,
+.review-section,
+.feedback {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin-top: 0;
+}
+
+.meta {
+    line-height: 1.8;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.summary-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.summary-number {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f7f7f7;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.badge-pass {
+    background: #dff5e3;
+}
+
+.badge-partial {
+    background: #fff0c7;
+}
+
+.badge-verify {
+    background: #dcecff;
+}
+
+.badge-wait {
+    background: #eeeeee;
+}
+
+.history-week {
+    margin-top: 18px;
+}
+
+.history-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.history-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #222;
+    background: #fafafa;
+}
+
+.history-link:hover {
+    background: #eeeeee;
+}
+
+.history-current {
+    font-weight: bold;
+    border-color: #777;
+}
+
+.feedback li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--text)}
-    .wrap{max-width:1050px;margin:auto;padding:32px 18px 60px}
-    .hero{background:linear-gradient(135deg,#172554,#1d4ed8);color:white;border-radius:22px;padding:30px;box-shadow:0 14px 34px rgba(15,23,42,.14)}
-    .eyebrow{font-size:.85rem;opacity:.8;text-transform:uppercase;letter-spacing:.08em}
-    h1{margin:8px 0 4px;font-size:2rem}
-    .repo{opacity:.9;word-break:break-all}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-    .pill{background:rgba(255,255,255,.14);padding:8px 12px;border-radius:999px;font-size:.9rem}
-    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
-    .stat,.card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 18px rgba(15,23,42,.04)}
-    .stat{padding:18px;text-align:center}
-    .stat strong{display:block;font-size:1.65rem}
-    .stat span{font-size:.84rem;color:var(--muted)}
-    .card{padding:22px;margin-top:16px}
-    .card h2{font-size:1.1rem;margin:0 0 14px;display:flex;justify-content:space-between;gap:12px}
-    .count{font-size:.85rem;color:var(--muted);font-weight:500}
-    .item{display:grid;grid-template-columns:34px 1fr;gap:8px;padding:11px 0;border-top:1px solid #f0f2f5}
-    .item:first-of-type{border-top:0}
-    .icon{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.84rem}
-    .pass .icon{color:var(--pass);background:var(--pass-bg)}
-    .wait .icon{color:var(--wait);background:var(--wait-bg)}
-    .verify .icon{color:var(--verify);background:var(--verify-bg)}
-    .partial .icon{color:var(--partial);background:var(--partial-bg)}
-    .label{font-weight:650}
-    .detail{color:var(--muted);font-size:.9rem;margin-top:3px;line-height:1.45}
-    .issues{border-left:4px solid #f59e0b}
-    .issues li{margin:10px 0;line-height:1.5}
-    code{background:#f1f5f9;padding:2px 6px;border-radius:6px}
-    .legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.88rem;margin:18px 2px}
-    footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:26px}
-    @media(max-width:700px){.summary{grid-template-columns:repeat(2,1fr)}.hero{padding:23px}h1{font-size:1.55rem}}
-  </style>
+
+    table {
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
 </head>
+
 <body>
-<main class="wrap">
-  <section class="hero">
-    <div class="eyebrow">Student Portfolio Progress</div>
-    <h1>รหัสนักศึกษา 69319010020</h1>
-    <div class="repo">Repository: nuttacha020/porfolio-std69319010020</div>
-    <div class="meta">
-      <span class="pill">Week 1</span>
-      <span class="pill">AI Review รอบที่ 1</span>
-      <span class="pill">Teacher Review: รอยืนยัน</span>
-    </div>
-  </section>
 
-  <section class="summary">
-    <div class="stat"><strong>10</strong><span>ผ่านชัดเจน</span></div>
-    <div class="stat"><strong>1</strong><span>ผ่านบางส่วน</span></div>
-    <div class="stat"><strong>1</strong><span>ต้องยืนยัน</span></div>
-    <div class="stat"><strong>10</strong><span>ยังไม่พบ / ยังไม่ทำ</span></div>
-  </section>
+<div class="container">
 
-  <div class="legend">
-    <span>✓ ผ่าน</span><span>△ ผ่านบางส่วน</span><span>? ต้องยืนยัน</span><span>○ ยังไม่พบ/ยังไม่ทำ</span>
-  </div>
+    
 
-  <section class="card">
-    <h2>Project Setup <span class="count">3 ผ่าน · 1 ต้องยืนยัน</span></h2>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Repository เป็นของนักศึกษา</div><div class="detail">Repository อยู่ภายใต้บัญชี nuttacha020</div></div></div>
-    <div class="item verify"><div class="icon">?</div><div><div class="label">origin ถูกต้อง</div><div class="detail">จาก Remote Repository อย่างเดียวยืนยันค่า origin ในเครื่องนักศึกษาไม่ได้</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Starter structure ครบ</div><div class="detail">พบไฟล์ HTML หลัก รวมถึง css/, js/, assets/ และโครงสร้าง Starter</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Push งานขึ้น GitHub แล้ว</div><div class="detail">พบงานและ Commit หลายครั้งบน branch main</div></div></div>
-  </section>
+    <section class="header">
 
-  <section class="card">
-    <h2>Personal Portfolio <span class="count">0 / 4 ผ่าน</span></h2>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">เปลี่ยนชื่อเป็นของตนเอง</div><div class="detail">index.html ยังพบชื่อ “John Doe”</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">เปลี่ยนข้อความแนะนำตัว</div><div class="detail">ยังพบ “Web Developer | UI Designer | Student”</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">ปรับข้อมูลแต่ละหน้า</div><div class="detail">about.html และ gallery.html ยังมีเนื้อหา Demo เดิม</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">ไม่มีข้อมูล Demo สำคัญหลงเหลือ</div><div class="detail">ยังพบ John Doe, Portfolio Demo และข้อความตัวอย่าง</div></div></div>
-  </section>
+        <h1>Student Progress</h1>
 
-  <section class="card">
-    <h2>Links &amp; Multimedia <span class="count">3 / 9 ผ่าน</span></h2>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Internal Link</div><div class="detail">พบลิงก์ไป about.html, skills.html, gallery.html และ contact.html</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">External Link</div><div class="detail">พบ GitHub URL ของ nuttacha020</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Email Link</div><div class="detail">พบ mailto:s69319010020@kktech.ac.th</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">Image</div><div class="detail">ยังไม่พบหลักฐานเพียงพอจากงานปัจจุบัน</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">alt</div><div class="detail">ยังไม่พบหลักฐานเพียงพอ</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">Audio</div><div class="detail">ยังไม่พบ</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">Video</div><div class="detail">ยังไม่พบ</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">YouTube Embed</div><div class="detail">ยังไม่พบ</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">Google Maps Embed</div><div class="detail">ยังไม่พบ</div></div></div>
-  </section>
+        <div class="meta">
 
-  <section class="card">
-    <h2>Git <span class="count">3 ผ่าน · 1 ผ่านบางส่วน</span></h2>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">มี Commit ของนักศึกษา</div><div class="detail">พบอย่างน้อย 9 commits</div></div></div>
-    <div class="item partial"><div class="icon">△</div><div><div class="label">Commit Message มีความหมาย</div><div class="detail">มีข้อความที่ดี เช่น “แก้ไขงาน css”, “แก้ไขงาน index”, “แก้ไข email” แต่ยังพบ “แก้ไขงาน” และ “huh” ซึ่งไม่ชัดเจน</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Commit สอดคล้องกับการพัฒนา</div><div class="detail">พบลำดับการแก้ไข CSS → index → email</div></div></div>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">Latest work ถูก Push แล้ว</div><div class="detail">Repository มี Commit ล่าสุดและไฟล์ปัจจุบันตรงกับการแก้ไขล่าสุด</div></div></div>
-  </section>
+            <strong>Student ID:</strong>
+            69319010020
+            <br>
 
-  <section class="card">
-    <h2>Final Review</h2>
-    <div class="item pass"><div class="icon">✓</div><div><div class="label">ผ่าน AI Review</div><div class="detail">AI ตรวจ Repository รอบที่ 1 สำเร็จ</div></div></div>
-    <div class="item wait"><div class="icon">○</div><div><div class="label">ผ่าน Teacher Review</div><div class="detail">รออาจารย์ตรวจยืนยันรอบที่ 2</div></div></div>
-  </section>
+            <strong>Week:</strong>
+            1
+            <br>
 
-  <section class="card issues">
-    <h2>สิ่งที่ควรตรวจสอบ / แก้ไขต่อ</h2>
-    <ul>
-      <li>External GitHub link มี syntax ที่ควรตรวจสอบ โดยส่วน <code>target="_blank"</code> ยังเขียนไม่ถูกต้อง</li>
-      <li><code>index.html</code> อ้าง CSS เป็น <code>../css/style.css</code> และ <code>../css/responsive.css</code> ควรตรวจ path เพราะไฟล์ index.html อยู่ระดับเดียวกับโฟลเดอร์ css/</li>
-      <li>เปลี่ยนข้อมูล Demo เช่น John Doe และข้อความแนะนำตัว ให้เป็นข้อมูลของนักศึกษา</li>
-      <li>ดำเนินงาน Links &amp; Multimedia ที่ยังไม่พบให้ครบตาม Progress Week 1</li>
-    </ul>
-  </section>
+            <strong>AI Review:</strong>
+            รอบที่ 2 · ผลล่าสุด
+            <br>
 
-  <footer>
-    Prototype Progress Web · ผล AI Review ใช้เป็นการตรวจรอบแรก และรอการยืนยันจากผู้สอน
-  </footer>
-</main>
+            <strong>Workshop:</strong>
+            Portfolio Workshop - Week 1
+
+        </div>
+
+    </section>
+
+    <section class="history">
+
+        <h2>Review History</h2>
+
+        
+            <div class="history-week">
+                <strong>Week 1</strong>
+
+                <div class="history-links">
+                    
+                <a class="history-link"
+                   href="./reviews/week01-round01.html">
+                    รอบที่ 1
+                </a>
+                
+                <a class="history-link history-current"
+                   href="./reviews/week01-round02.html">
+                    รอบที่ 2 · ล่าสุด
+                </a>
+                
+                </div>
+            </div>
+            
+
+    </section>
+
+    <section class="summary">
+
+        <h2>Review Summary</h2>
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    14
+                </div>
+                ผ่าน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    2
+                </div>
+                ผ่านบางส่วน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    0
+                </div>
+                ต้องยืนยัน
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-number">
+                    4
+                </div>
+                ยังไม่พบ
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Project Setup</h2>
+            <span>3 / 3 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>Repository เป็นของนักศึกษา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>Repository portfolio-std69319010020 อยู่ภายใต้บัญชี GitHub nuttacha020</td>
+            </tr>
+            
+            <tr>
+                <td>Starter structure ครบ</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบไฟล์ HTML หลัก และโครงสร้าง css/, js/, assets/, images/, audio/ และ video/</td>
+            </tr>
+            
+            <tr>
+                <td>Push งานขึ้น GitHub แล้ว</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Source Code ปัจจุบันบน branch main</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Personal Portfolio</h2>
+            <span>3 / 4 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>เปลี่ยนชื่อเป็นของตนเอง</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบการเปลี่ยนชื่อเป็น Ms.nuttacha และข้อมูลชื่อของนักศึกษาในเว็บไซต์</td>
+            </tr>
+            
+            <tr>
+                <td>เปลี่ยนข้อความแนะนำตัว</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบข้อความแนะนำตัวของนักศึกษาและข้อมูลเกี่ยวกับการศึกษาในสาขาเทคโนโลยีสารสนเทศ</td>
+            </tr>
+            
+            <tr>
+                <td>ปรับข้อมูลแต่ละหน้า</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบการปรับข้อมูลส่วนตัวใน index.html, about.html, gallery.html และ contact.html</td>
+            </tr>
+            
+            <tr>
+                <td>ไม่มีข้อมูล Demo สำคัญหลงเหลือ</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>ข้อมูลหลักถูกเปลี่ยนเป็นของนักศึกษาแล้ว แต่ยังมีข้อความทั่วไปจาก Starter เช่น Web Developer | UI Designer | Student อยู่หลายหน้า</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Links &amp; Multimedia</h2>
+            <span>5 / 9 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>Internal Link</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Internal Link เชื่อม Home, About, Skills, Gallery และ Contact</td>
+            </tr>
+            
+            <tr>
+                <td>External Link</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ External Link ไปยัง GitHub ของ nuttacha020 และกำหนด target=&quot;_blank&quot;</td>
+            </tr>
+            
+            <tr>
+                <td>Email Link</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Email Link แบบ mailto:s69319010020@kktech.ac.th</td>
+            </tr>
+            
+            <tr>
+                <td>Image</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบการใช้งานรูปภาพใน gallery.html</td>
+            </tr>
+            
+            <tr>
+                <td>alt</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>รูปภาพใน gallery.html มี alt อธิบายรูปภาพ</td>
+            </tr>
+            
+            <tr>
+                <td>Audio</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบการใช้งาน Audio ใน Source ปัจจุบัน</td>
+            </tr>
+            
+            <tr>
+                <td>Video</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบการใช้งาน Video ใน Source ปัจจุบัน</td>
+            </tr>
+            
+            <tr>
+                <td>YouTube Embed</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบ YouTube Embed ใน Source ปัจจุบัน</td>
+            </tr>
+            
+            <tr>
+                <td>Google Maps Embed</td>
+                <td><span class="badge badge-wait">ยังไม่พบ</span></td>
+                <td>ยังไม่พบ Google Maps Embed ใน Source ปัจจุบัน</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section class="review-section">
+
+        <div class="section-heading">
+            <h2>Git</h2>
+            <span>3 / 4 ผ่าน</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>เกณฑ์</th>
+                    <th>สถานะ</th>
+                    <th>รายละเอียดจาก AI Review</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            <tr>
+                <td>มี Commit ของนักศึกษา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Commit ของนักศึกษาหลายครั้งและมีการแก้ไขงานต่อเนื่อง</td>
+            </tr>
+            
+            <tr>
+                <td>Commit Message มีความหมาย</td>
+                <td><span class="badge badge-partial">ผ่านบางส่วน</span></td>
+                <td>มี Commit Message ที่อธิบายงาน เช่น แก้ไขข้อมูลส่วนตัว, แก้ไข css และแก้ไข email แต่ยังมี Commit Message ซ้ำหรือกว้างเกินไปบางรายการ</td>
+            </tr>
+            
+            <tr>
+                <td>Commit สอดคล้องกับการพัฒนา</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>Commit History แสดงพัฒนาการจากการแก้ Starter ไปสู่การปรับข้อมูลส่วนตัวและองค์ประกอบของ Portfolio</td>
+            </tr>
+            
+            <tr>
+                <td>Latest work ถูก Push แล้ว</td>
+                <td><span class="badge badge-pass">ผ่าน</span></td>
+                <td>พบ Source Code ล่าสุดบน branch main และ Repository มีการ Push งานล่าสุดแล้ว</td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </section>
+    
+
+    <section class="feedback">
+
+        <h2>
+            สิ่งที่ควรตรวจสอบ / แก้ไขต่อ
+        </h2>
+
+        <ul>
+            <li>
+                <strong>FIX</strong>
+                ตรวจข้อความจาก Starter ที่ยังเหลือ เช่น Web Developer | UI Designer | Student และปรับให้สะท้อนข้อมูลหรือความสนใจของตนเอง
+            </li>
+            
+            <li>
+                <strong>IMPROVE</strong>
+                เขียน Commit Message ให้เฉพาะเจาะจงกับการเปลี่ยนแปลงแต่ละครั้งมากขึ้น แทนการใช้ข้อความเดิมซ้ำหลาย Commit
+            </li>
+            
+            <li>
+                <strong>NEXT</strong>
+                เพิ่ม Audio, Video, YouTube Embed และ Google Maps Embed เพื่อให้ Links &amp; Multimedia ของ Week 1 ครบ
+            </li>
+            </ul>
+
+    </section>
+
+</div>
+
 </body>
+
 </html>
