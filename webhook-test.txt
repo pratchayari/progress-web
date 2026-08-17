@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 Progress Web webhook test"Webhook test 4" 
+=======
+Progress Web webhook test"Webhook test 3" 
+"Structure validation test" 
+>>>>>>> cb775a0 (test: validate progress structure)
