@@ -1,0 +1,117 @@
+{
+  "student_id": "69319010020",
+  "week": 1,
+  "review_round": 3,
+  "items": [
+    {
+      "criterion_id": "repository_owner",
+      "status": "pass",
+      "detail": "Repository portfolio-std69319010020 อยู่ภายใต้บัญชี GitHub nuttacha020"
+    },
+    {
+      "criterion_id": "starter_structure",
+      "status": "pass",
+      "detail": "พบหน้า HTML ระดับหลัก 6 หน้า พร้อมโครงสร้าง CSS, JavaScript และโฟลเดอร์สื่อ"
+    },
+    {
+      "criterion_id": "pushed_to_github",
+      "status": "pass",
+      "detail": "พบ Source Code ปัจจุบันบน branch main ของ GitHub"
+    },
+    {
+      "criterion_id": "personal_name",
+      "status": "pass",
+      "detail": "พบชื่อของนักศึกษาในหัวเรื่องหลักของเว็บไซต์"
+    },
+    {
+      "criterion_id": "personal_intro",
+      "status": "pass",
+      "detail": "หน้า About มีข้อความแนะนำตัวและข้อมูลส่วนบุคคล"
+    },
+    {
+      "criterion_id": "personal_pages",
+      "status": "pass",
+      "detail": "พบการปรับข้อมูลในหน้าหลัก 6 จาก 6 หน้า"
+    },
+    {
+      "criterion_id": "remove_demo_content",
+      "status": "pass",
+      "detail": "ไม่พบชื่อหรือหัวข้อ Demo สำคัญตกค้าง"
+    },
+    {
+      "criterion_id": "internal_link",
+      "status": "pass",
+      "detail": "พบลิงก์เชื่อมโยงระหว่างหน้าภายในเว็บไซต์"
+    },
+    {
+      "criterion_id": "external_link",
+      "status": "pass",
+      "detail": "พบลิงก์ออกไปยังเว็บไซต์ภายนอก"
+    },
+    {
+      "criterion_id": "email_link",
+      "status": "pass",
+      "detail": "พบ Email Link แบบ mailto:"
+    },
+    {
+      "criterion_id": "image",
+      "status": "pass",
+      "detail": "พบการใช้แท็ก Image จำนวน 2 จุด"
+    },
+    {
+      "criterion_id": "image_alt",
+      "status": "pass",
+      "detail": "รูปภาพมี alt ครบทุกจุด"
+    },
+    {
+      "criterion_id": "audio",
+      "status": "pass",
+      "detail": "พบการใช้งานแท็ก Audio ในหน้าเว็บ"
+    },
+    {
+      "criterion_id": "video",
+      "status": "pass",
+      "detail": "พบการใช้งานแท็ก Video ในหน้าเว็บ"
+    },
+    {
+      "criterion_id": "youtube_embed",
+      "status": "pass",
+      "detail": "พบ YouTube Embed ผ่าน iframe"
+    },
+    {
+      "criterion_id": "google_maps_embed",
+      "status": "pass",
+      "detail": "พบ Google Maps Embed ผ่าน iframe"
+    },
+    {
+      "criterion_id": "student_commits",
+      "status": "pass",
+      "detail": "พบ Commit หลัง Starter จำนวน 20 รายการ"
+    },
+    {
+      "criterion_id": "meaningful_commit_message",
+      "status": "pass",
+      "detail": "มี Commit Message ที่บอกงานได้ 20 จาก 20 รายการล่าสุด"
+    },
+    {
+      "criterion_id": "development_history",
+      "status": "pass",
+      "detail": "Commit History แสดงการพัฒนางานหลายครั้ง"
+    },
+    {
+      "criterion_id": "latest_work_pushed",
+      "status": "pass",
+      "detail": "พบงานล่าสุดบน branch main และใช้ Source ล่าสุดในการตรวจรอบนี้"
+    }
+  ],
+  "feedback": [
+    {
+      "type": "improve",
+      "message": "ตรวจความสม่ำเสมอของชื่อ หน้าเมนู และการแสดงผลบนโทรศัพท์ พร้อมทดสอบทุกลิงก์ก่อนส่งรอบถัดไป"
+    },
+    {
+      "type": "next",
+      "message": "รอบถัดไปให้แยก Commit ตามงานที่ทำ และตรวจหน้าเว็บจริงว่ารูป เสียง วิดีโอ YouTube และแผนที่เปิดได้ครบ"
+    }
+  ]
+}
