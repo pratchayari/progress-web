@@ -1,0 +1,146 @@
+{
+  "generated_at": "21/09/2026 23:04",
+  "summary": {
+    "total_students": 15,
+    "reviewed_twice": 15,
+    "three_rounds": 10,
+    "total_review_files": 40
+  },
+  "students": [
+    {
+      "student_id": "69319010020",
+      "github_owner": "nuttacha020",
+      "latest_round": 3,
+      "latest_pass": 20,
+      "latest_total": 20,
+      "latest_percent": 100,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010021",
+      "github_owner": "natdanai-xp",
+      "latest_round": 3,
+      "latest_pass": 16,
+      "latest_total": 20,
+      "latest_percent": 80,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010022",
+      "github_owner": "s69319010022-cloud",
+      "latest_round": 3,
+      "latest_pass": 17,
+      "latest_total": 20,
+      "latest_percent": 85,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010023",
+      "github_owner": "s69319010023pao",
+      "latest_round": 3,
+      "latest_pass": 17,
+      "latest_total": 20,
+      "latest_percent": 85,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010024",
+      "github_owner": "s69319010024-arch",
+      "latest_round": 3,
+      "latest_pass": 16,
+      "latest_total": 20,
+      "latest_percent": 80,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010026",
+      "github_owner": "s69319010026-ux",
+      "latest_round": 2,
+      "latest_pass": 16,
+      "latest_total": 20,
+      "latest_percent": 80,
+      "review_count": 2
+    },
+    {
+      "student_id": "69319010027",
+      "github_owner": "Noppanut-bot",
+      "latest_round": 2,
+      "latest_pass": 12,
+      "latest_total": 20,
+      "latest_percent": 60,
+      "review_count": 2
+    },
+    {
+      "student_id": "69319010029",
+      "github_owner": "s69319010029-droid",
+      "latest_round": 3,
+      "latest_pass": 14,
+      "latest_total": 20,
+      "latest_percent": 70,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010030",
+      "github_owner": "s69319010030-boop",
+      "latest_round": 3,
+      "latest_pass": 18,
+      "latest_total": 20,
+      "latest_percent": 90,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010031",
+      "github_owner": "s69319010031-a11y",
+      "latest_round": 3,
+      "latest_pass": 18,
+      "latest_total": 20,
+      "latest_percent": 90,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010032",
+      "github_owner": "siriwimon16",
+      "latest_round": 2,
+      "latest_pass": 16,
+      "latest_total": 20,
+      "latest_percent": 80,
+      "review_count": 2
+    },
+    {
+      "student_id": "69319010034",
+      "github_owner": "SuriyaWest",
+      "latest_round": 2,
+      "latest_pass": 17,
+      "latest_total": 20,
+      "latest_percent": 85,
+      "review_count": 2
+    },
+    {
+      "student_id": "69319010038",
+      "github_owner": "Atsada07",
+      "latest_round": 3,
+      "latest_pass": 20,
+      "latest_total": 20,
+      "latest_percent": 100,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010039",
+      "github_owner": "s69319010039-sudo",
+      "latest_round": 3,
+      "latest_pass": 19,
+      "latest_total": 20,
+      "latest_percent": 95,
+      "review_count": 3
+    },
+    {
+      "student_id": "69319010041",
+      "github_owner": "Thanuphat07",
+      "latest_round": 2,
+      "latest_pass": 14,
+      "latest_total": 20,
+      "latest_percent": 70,
+      "review_count": 2
+    }
+  ]
+}
